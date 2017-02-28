@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+include Faker
+
+10.times do
+  movie = Movie.create( :title => "#{Book.title}",
+                        :description => "#{Lorem.sentences}",
+                        :category => "#{Book.genre}",
+                        :ratings => rand(1..5))
+
+  puts movie.inspect
+end

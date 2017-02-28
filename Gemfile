@@ -24,6 +24,10 @@ group :development, :test do
 end
 
 gem 'devise'
+gem 'hirb'
+gem 'faker'
+gem 'haml'
+gem 'haml-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

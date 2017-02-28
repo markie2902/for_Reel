@@ -1,0 +1,9 @@
+<h1>Movies</h1>
+  <%= @movies.each do |m| %>
+    <h4>Movie Title: <%= m.title %> <h4>
+    <h4>Movie Category: <%= m.category %> </h4>
+    <h4>Movie Summary: </h4> <%= m.description %>
+    <h4>Ratings: <%= m.ratings %> </h4>
+    <br>
+    <hr>
+  <%end%>
